@@ -1,0 +1,573 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>DARKORA | Halloween Costume Store</title>
+
+  <meta name="description"
+    content="Discover premium Halloween costumes for men, women and kids at DARKORA.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- ANNOUNCEMENT BAR -->
+  <div class="announcement">
+    🎃 HALLOWEEN SPECIAL SALE — DISCOVER YOUR DARK SIDE 🎃
+  </div>
+
+  <!-- HEADER -->
+  <header class="header">
+
+    <a href="#home" class="logo">
+      DARK<span>ORA</span>
+    </a>
+
+    <button class="menu-button" id="menuButton"
+      aria-label="Toggle navigation" aria-expanded="false">
+      ☰
+    </button>
+
+    <nav class="navbar" id="navbar">
+      <a href="#home">Home</a>
+      <a href="#collections">Collections</a>
+      <a href="#shop">Shop</a>
+      <a href="#about">About</a>
+    </nav>
+
+    <button class="cart-button" id="cartButton">
+      🛒 Cart (<span id="cartCount">0</span>)
+    </button>
+
+  </header>
+
+  <main>
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
+
+      <div class="hero-content">
+
+        <p class="eyebrow">THE HALLOWEEN COLLECTION 2026</p>
+
+        <h1>
+          ENTER THE<br>
+          <span>DARK SIDE.</span>
+        </h1>
+
+        <p class="hero-description">
+          Discover extraordinary Halloween costumes for every
+          age. Make your spooky night unforgettable with DARKORA.
+        </p>
+
+        <a href="#shop" class="primary-button">
+          EXPLORE COLLECTION →
+        </a>
+
+        <p class="hero-note">
+          MEN · WOMEN · KIDS
+        </p>
+
+      </div>
+
+      <div class="hero-image">
+        <img
+          src="https://images.unsplash.com/photo-1509557965875-b88c97052f0e?auto=format&fit=crop&w=1000&q=85"
+          alt="Dark Halloween fashion inspiration">
+
+        <div class="image-caption">
+          <span>DARKORA EXCLUSIVE</span>
+          <span>LIMITED COLLECTION</span>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- COLLECTIONS -->
+    <section class="section collections" id="collections">
+
+      <div class="section-heading">
+        <p class="eyebrow">FIND YOUR STYLE</p>
+        <h2>Shop by <span>Collection</span></h2>
+        <p>Find the perfect costume for your Halloween adventure.</p>
+      </div>
+
+      <div class="collection-grid">
+
+        <a href="#shop" class="collection-card"
+          data-category="men">
+
+          <img
+            src="https://images.unsplash.com/photo-1506629905607-d9e9b8d35c8c?auto=format&fit=crop&w=700&q=80"
+            alt="Men's dark fashion">
+
+          <div class="collection-overlay">
+            <p>COLLECTION 01</p>
+            <h3>MEN</h3>
+            <span>Discover the collection →</span>
+          </div>
+
+        </a>
+
+        <a href="#shop" class="collection-card"
+          data-category="women">
+
+          <img
+            src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=700&q=80"
+            alt="Women's fashion">
+
+          <div class="collection-overlay">
+            <p>COLLECTION 02</p>
+            <h3>WOMEN</h3>
+            <span>Discover the collection →</span>
+          </div>
+
+        </a>
+
+        <a href="#shop" class="collection-card"
+          data-category="kids">
+
+          <img
+            src="https://images.unsplash.com/photo-1503919005314-30d93d07d823?auto=format&fit=crop&w=700&q=80"
+            alt="Kids fashion">
+
+          <div class="collection-overlay">
+            <p>COLLECTION 03</p>
+            <h3>KIDS</h3>
+            <span>Discover the collection →</span>
+          </div>
+
+        </a>
+
+      </div>
+
+    </section>
+
+    <!-- SHOP SECTION -->
+    <section class="section shop" id="shop">
+
+      <div class="section-heading">
+        <p class="eyebrow">THE DARKORA STORE</p>
+        <h2>Our <span>Costumes</span></h2>
+        <p>Choose your favourite look and add it to your cart.</p>
+      </div>
+
+      <!-- SEARCH, FILTER AND SORT -->
+      <div class="shop-controls">
+
+        <input
+          type="search"
+          id="searchInput"
+          placeholder="Search costumes..."
+          aria-label="Search costumes">
+
+        <select id="categoryFilter" aria-label="Filter by category">
+          <option value="all">All Costumes</option>
+          <option value="men">Men</option>
+          <option value="women">Women</option>
+          <option value="kids">Kids</option>
+        </select>
+
+        <select id="sortSelect" aria-label="Sort products">
+          <option value="default">Featured</option>
+          <option value="low">Price: Low to High</option>
+          <option value="high">Price: High to Low</option>
+        </select>
+
+      </div>
+
+      <!-- PRODUCTS -->
+      <div class="product-grid" id="productGrid">
+
+        <!-- PRODUCT 1 -->
+        <article class="product-card"
+          data-id="1" data-name="Vampire King Costume"
+          data-category="men" data-price="1499">
+
+          <div class="product-image">
+
+            <img
+              src="https://images.unsplash.com/photo-1509557965875-b88c97052f0e?auto=format&fit=crop&w=600&q=80"
+              alt="Vampire King costume">
+
+            <span class="product-tag">BESTSELLER</span>
+
+            <button class="wishlist-button"
+              aria-label="Add Vampire King to wishlist"
+              type="button">♡</button>
+
+          </div>
+
+          <div class="product-details">
+            <p class="product-category">MEN</p>
+            <h3>Vampire King Costume</h3>
+
+            <div class="product-bottom">
+              <span class="price">₹1,499</span>
+              <button class="add-button" type="button">
+                Add to Cart +
+              </button>
+            </div>
+          </div>
+
+        </article>
+
+        <!-- PRODUCT 2 -->
+        <article class="product-card"
+          data-id="2" data-name="Dark Angel Costume"
+          data-category="women" data-price="1799">
+
+          <div class="product-image">
+
+            <img
+              src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=600&q=80"
+              alt="Dark Angel inspired costume">
+
+            <span class="product-tag">NEW</span>
+
+            <button class="wishlist-button"
+              aria-label="Add Dark Angel to wishlist"
+              type="button">♡</button>
+
+          </div>
+
+          <div class="product-details">
+            <p class="product-category">WOMEN</p>
+            <h3>Dark Angel Costume</h3>
+
+            <div class="product-bottom">
+              <span class="price">₹1,799</span>
+              <button class="add-button" type="button">
+                Add to Cart +
+              </button>
+            </div>
+          </div>
+
+        </article>
+
+        <!-- PRODUCT 3 -->
+        <article class="product-card"
+          data-id="3" data-name="Cute Pumpkin Costume"
+          data-category="kids" data-price="799">
+
+          <div class="product-image">
+
+            <img
+              src="https://images.unsplash.com/photo-1503919005314-30d93d07d823?auto=format&fit=crop&w=600&q=80"
+              alt="Cute Halloween costume inspiration for kids">
+
+            <span class="product-tag">CUTE PICK</span>
+
+            <button class="wishlist-button"
+              aria-label="Add Cute Pumpkin to wishlist"
+              type="button">♡</button>
+
+          </div>
+
+          <div class="product-details">
+            <p class="product-category">KIDS</p>
+            <h3>Cute Pumpkin Costume</h3>
+
+            <div class="product-bottom">
+              <span class="price">₹799</span>
+              <button class="add-button" type="button">
+                Add to Cart +
+              </button>
+            </div>
+          </div>
+
+        </article>
+
+        <!-- PRODUCT 4 -->
+        <article class="product-card"
+          data-id="4" data-name="Skeleton Warrior Costume"
+          data-category="men" data-price="1299">
+
+          <div class="product-image">
+
+            <img
+              src="https://images.unsplash.com/photo-1518709594023-6eab9bab7b23?auto=format&fit=crop&w=600&q=80"
+              alt="Dark Halloween costume inspiration">
+
+            <span class="product-tag">TRENDING</span>
+
+            <button class="wishlist-button"
+              aria-label="Add Skeleton Warrior to wishlist"
+              type="button">♡</button>
+
+          </div>
+
+          <div class="product-details">
+            <p class="product-category">MEN</p>
+            <h3>Skeleton Warrior Costume</h3>
+
+            <div class="product-bottom">
+              <span class="price">₹1,299</span>
+              <button class="add-button" type="button">
+                Add to Cart +
+              </button>
+            </div>
+          </div>
+
+        </article>
+
+        <!-- PRODUCT 5 -->
+        <article class="product-card"
+          data-id="5" data-name="Midnight Witch Costume"
+          data-category="women" data-price="1599">
+
+          <div class="product-image">
+
+            <img
+              src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=600&q=80"
+              alt="Midnight fashion inspiration">
+
+            <button class="wishlist-button"
+              aria-label="Add Midnight Witch to wishlist"
+              type="button">♡</button>
+
+          </div>
+
+          <div class="product-details">
+            <p class="product-category">WOMEN</p>
+            <h3>Midnight Witch Costume</h3>
+
+            <div class="product-bottom">
+              <span class="price">₹1,599</span>
+              <button class="add-button" type="button">
+                Add to Cart +
+              </button>
+            </div>
+          </div>
+
+        </article>
+
+        <!-- PRODUCT 6 -->
+        <article class="product-card"
+          data-id="6" data-name="Little Monster Costume"
+          data-category="kids" data-price="699">
+
+          <div class="product-image">
+
+            <img
+              src="https://images.unsplash.com/photo-1519238263530-99bdd11df2ea?auto=format&fit=crop&w=600&q=80"
+              alt="Kids costume inspiration">
+
+            <button class="wishlist-button"
+              aria-label="Add Little Monster to wishlist"
+              type="button">♡</button>
+
+          </div>
+
+          <div class="product-details">
+            <p class="product-category">KIDS</p>
+            <h3>Little Monster Costume</h3>
+
+            <div class="product-bottom">
+              <span class="price">₹699</span>
+              <button class="add-button" type="button">
+                Add to Cart +
+              </button>
+            </div>
+          </div>
+
+        </article>
+
+        <!-- PRODUCT 7 -->
+        <article class="product-card"
+          data-id="7" data-name="Gothic Prince Costume"
+          data-category="men" data-price="1899">
+
+          <div class="product-image">
+
+            <img
+              src="https://images.unsplash.com/photo-1516257984-b1b4d707412e?auto=format&fit=crop&w=600&q=80"
+              alt="Gothic inspired fashion">
+
+            <button class="wishlist-button"
+              aria-label="Add Gothic Prince to wishlist"
+              type="button">♡</button>
+
+          </div>
+
+          <div class="product-details">
+            <p class="product-category">MEN</p>
+            <h3>Gothic Prince Costume</h3>
+
+            <div class="product-bottom">
+              <span class="price">₹1,899</span>
+              <button class="add-button" type="button">
+                Add to Cart +
+              </button>
+            </div>
+          </div>
+
+        </article>
+
+        <!-- PRODUCT 8 -->
+        <article class="product-card"
+          data-id="8" data-name="Purple Fairy Costume"
+          data-category="women" data-price="1399">
+
+          <div class="product-image">
+
+            <img
+              src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=600&q=80"
+              alt="Purple fairy inspired fashion">
+
+            <button class="wishlist-button"
+              aria-label="Add Purple Fairy to wishlist"
+              type="button">♡</button>
+
+          </div>
+
+          <div class="product-details">
+            <p class="product-category">WOMEN</p>
+            <h3>Purple Fairy Costume</h3>
+
+            <div class="product-bottom">
+              <span class="price">₹1,399</span>
+              <button class="add-button" type="button">
+                Add to Cart +
+              </button>
+            </div>
+          </div>
+
+        </article>
+
+      </div>
+
+      <p id="noProducts" hidden>
+        No costumes found. Try another search.
+      </p>
+
+    </section>
+
+    <!-- SPECIAL OFFER -->
+    <section class="special-banner">
+
+      <div class="special-content">
+        <p class="eyebrow">A NIGHT TO REMEMBER</p>
+        <h2>Make Halloween <span>Magical.</span></h2>
+
+        <p>
+          Find your perfect spooky style and create
+          unforgettable Halloween memories.
+        </p>
+      </div>
+
+      <a href="#shop" class="primary-button">
+        SHOP NOW →
+      </a>
+
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about section" id="about">
+
+      <p class="eyebrow">WELCOME TO DARKORA</p>
+      <h2>Style Meets <span>Spooky.</span></h2>
+
+      <p>
+        DARKORA is a Halloween costume store concept for men,
+        women and kids. Explore dark fashion, spooky outfits
+        and creative costume ideas in one place.
+      </p>
+
+    </section>
+
+    <!-- NEWSLETTER -->
+    <section class="newsletter">
+
+      <p class="eyebrow">JOIN THE DARK SIDE</p>
+      <h2>Get <span>Spooky Updates.</span></h2>
+
+      <p>Subscribe for new collection announcements and offers.</p>
+
+      <form id="newsletterForm">
+
+        <input
+          type="email"
+          id="emailInput"
+          placeholder="Enter your email address"
+          aria-label="Email address"
+          required>
+
+        <button type="submit" class="primary-button">
+          SUBSCRIBE
+        </button>
+
+      </form>
+
+      <p id="newsletterMessage" aria-live="polite"></p>
+
+    </section>
+
+  </main>
+
+  <!-- SHOPPING CART MODAL -->
+  <div class="cart-modal" id="cartModal" hidden>
+
+    <div class="cart-box"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="cartTitle">
+
+      <button class="close-button" id="closeCart"
+        aria-label="Close cart">×</button>
+
+      <h2 id="cartTitle">🛒 Your Shopping Cart</h2>
+
+      <div id="cartItems">
+        <p>Your cart is empty.</p>
+      </div>
+
+      <p class="cart-total">
+        Total: <span id="cartTotal">₹0</span>
+      </p>
+
+      <button class="primary-button" id="checkoutButton">
+        PROCEED TO CHECKOUT
+      </button>
+
+      <p id="cartMessage" aria-live="polite"></p>
+
+    </div>
+
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+
+    <a href="#home" class="logo">
+      DARK<span>ORA</span>
+    </a>
+
+    <div class="footer-links">
+      <a href="#home">Home</a>
+      <a href="#collections">Collections</a>
+      <a href="#shop">Shop</a>
+      <a href="#about">About Us</a>
+    </div>
+
+    <p class="copyright">
+      © 2026 DARKORA. Halloween Fashion Concept.
+    </p>
+
+  </footer>
+
+  <!-- JAVASCRIPT -->
+  <script src="script.js"></script>
+
+</body>
+</html>
